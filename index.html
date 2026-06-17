@@ -2,14 +2,60 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Trang web của tôi</title>
+    <title>Trang web của Phúc Nguyên</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+        /* Thiết lập cơ bản cho toàn trang */
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            background-color: #f4f4f9;
+        }
+
+        /* Trang trí cho thanh tab (Navigation bar) */
+        .navbar { 
+            background-color: #333; 
+            overflow: hidden; 
+        }
+        
+        /* Trang trí cho từng nút bấm trong tab */
+        .navbar a { 
+            float: left; 
+            display: block; 
+            color: white; 
+            text-align: center; 
+            padding: 14px 20px; 
+            text-decoration: none; 
+            font-weight: bold;
+        }
+        
+        /* Đổi màu khi di chuột qua nút bấm */
+        .navbar a:hover { 
+            background-color: #2ea44f; 
+            color: white; 
+        }
+
+        /* Phần nội dung chính */
+        .content { 
+            padding: 40px; 
+            text-align: center;
+        }
+        
         h1 { color: #2ea44f; }
     </style>
 </head>
 <body>
-    <h1>Xin chào thế giới!</h1>
-    <p>Đây là trang web đầu tiên của tôi được tạo trên GitHub.</p>
+
+    <div class="navbar">
+        <a href="#trang-chu">Trang chủ</a>
+        <a href="#gioi-thieu">Giới thiệu</a>
+        <a href="#du-an">Dự án</a>
+        <a href="#lien-he">Liên hệ</a>
+    </div>
+
+    <div class="content">
+        <h1>Xin chào thế giới!</h1>
+        <p>Đây là phiên bản web đã được nâng cấp thêm thanh điều hướng ở phía trên.</p>
+    </div>
+
 </body>
 </html>
